@@ -1,0 +1,25 @@
+.hero
+  margin-bottom: 10rem
+
+.hero-image
+  width: calc(var(--index) * 36)
+  position: absolute
+  right: 0
+  top: 0
+  z-index: -1
+
+.hero-title_container
+  padding: 0 7vw
+  height: 100vh
+  position: relative
+
+.hero-title_text
+  font-size: calc(var(--index) * 7)
+  position: absolute
+  width: min-content
+  bottom: 12vh
+  line-height: .9
+
+@media only screen and (max-width: 640px)
+  .hero
+    margin-bottom: 0
