@@ -22,7 +22,7 @@ const MotionUl: React.FC<IProps> = ({ ul, reverse }) => {
   const x = useTransform(scrollYProgress, [0, 0.35], [reverse ? '-50%' : '50%', '0%'])
   const xSpring = useSpring(x, { stiffness: 100, damping: 20 })
 
-  const opacity = useTransform(scrollYProgress, [0, 0.8], [0, 1])
+  const opacity = useTransform(scrollYProgress, [0, 0.6], [0, 1])
   const opacitySpring = useSpring(opacity, { stiffness: 100, damping: 20 })
 
   return (

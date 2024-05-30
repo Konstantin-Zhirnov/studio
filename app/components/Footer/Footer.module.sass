@@ -10,8 +10,10 @@
     list-style: none
     gap: 2rem
 
-    a
-      text-decoration: none
+    li
+      max-width: 50%
+      a
+        text-decoration: none
 
     .title
       display: flex
@@ -19,6 +21,11 @@
       align-items: center
       gap: 0.6rem
       margin-bottom: 0.2rem
+
+      .img
+        width: calc(var(--index)* 1.6)
+        height: calc(var(--index)* 1.6)
+
       p
         font-family: outfit-c, serif
         font-size: calc(var(--index) * 1.4)

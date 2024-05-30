@@ -9,7 +9,13 @@ const Footer: React.FC = () => {
       <ul className={classes.ul}>
         <li>
           <div className={classes.title}>
-            <Image src="/images/time.svg" alt="Work hours" width={24} height={24} />
+            <img
+              src="/images/time.svg"
+              alt="Work hours"
+              width={24}
+              height={24}
+              className={classes.img}
+            />
             <p>Work hours:</p>
           </div>
           <p className={classes.text}>Tuesday, Wednesday: 9am - 6pm</p>
@@ -17,7 +23,13 @@ const Footer: React.FC = () => {
         <li>
           <a href="tel:+12507972834">
             <div className={classes.title}>
-              <Image src="/images/phone.svg" alt="Phone" width={24} height={24} />
+              <Image
+                src="/images/phone.svg"
+                alt="Phone"
+                width={24}
+                height={24}
+                className={classes.img}
+              />
               <p>Phone:</p>
             </div>
             <p className={classes.text}>(250) 797-28-34</p>
@@ -26,7 +38,13 @@ const Footer: React.FC = () => {
         <li>
           <a href="mailto:kostya.zhirnov@gmail.com">
             <div className={classes.title}>
-              <Image src="/images/email.svg" alt="Email" width={24} height={24} />
+              <Image
+                src="/images/email.svg"
+                alt="Email"
+                width={24}
+                height={24}
+                className={classes.img}
+              />
               <p>Email:</p>
             </div>
             <p className={classes.text}>kostya.zhirnov@gmail.com</p>
