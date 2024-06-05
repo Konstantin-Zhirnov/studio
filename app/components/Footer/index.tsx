@@ -8,19 +8,6 @@ const Footer: React.FC = () => {
     <footer className={classes.container}>
       <ul className={classes.ul}>
         <li>
-          <div className={classes.title}>
-            <img
-              src="/images/time.svg"
-              alt="Work hours"
-              width={24}
-              height={24}
-              className={classes.img}
-            />
-            <p>Work hours:</p>
-          </div>
-          <p className={classes.text}>Tuesday, Wednesday: 9am - 6pm</p>
-        </li>
-        <li>
           <a href="tel:+12507972834">
             <div className={classes.title}>
               <Image
