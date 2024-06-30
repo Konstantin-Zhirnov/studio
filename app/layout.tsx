@@ -11,7 +11,7 @@ export const metadata = {
     title: 'Digital Nanaimo',
     description:
       'Our company is engaged in the creation of websites, mobile applications and web applications of any complexity using the most modern technology stack. We are ready to cooperate with both companies and individuals.',
-    url: 'https://digital-nanaimo.ca',
+    url: 'https://nanaimo.digital',
   },
 }
 
