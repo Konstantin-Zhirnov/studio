@@ -5,8 +5,6 @@ export const offers = [
     secondText:
       'Our company offers a full range of web development services — from corporate websites and blogs to online stores and personal portfolios. Whether you need to create website solutions from scratch or improve an existing platform, we’re here to help at every step.',
     thirdText: 'Here’s what we deliver:',
-    finalText:
-      'Let us turn your vision into a digital reality — professionally, efficiently, and with a creative touch.',
     src: '/images/web.svg',
     ul: [
       {
@@ -77,9 +75,12 @@ export const offers = [
 ]
 
 export type OfferType = {
-  title: string
-  text: string
+  reverse?: boolean
+  secondText?: string
   src: string
+  text: string
+  thirdText?: string
+  title: string
   ul: {
     span: string
     text: string
@@ -89,11 +90,17 @@ export type OfferType = {
 export const animation = {
   hidden: {
     opacity: 0,
-    y: 30,
+    y: 40,
+    scale: 0.98,
   },
   visible: (custom: number) => ({
     opacity: 1,
     y: 0,
-    transition: { duration: 0.7, delay: custom || 0.6 },
+    scale: 1,
+    transition: {
+      duration: 1,
+      delay: custom || 0.3,
+      ease: [0.22, 1, 0.36, 1],
+    },
   }),
 }

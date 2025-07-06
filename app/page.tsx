@@ -14,7 +14,6 @@ export default function Home() {
 
       {offers.map((item, index) => (
         <Offer
-          finalText={item.finalText}
           key={item.title}
           reverse={index % 2 !== 0}
           secondText={item.secondText}

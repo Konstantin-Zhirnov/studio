@@ -12,29 +12,27 @@ import { MotionUl } from '@/app/components/Offer/MotionUl'
 
 import classes from './Offer.module.sass'
 
-export const Offer: React.FC<
-  OfferType & { finalText?: string; reverse?: boolean; secondText?: string; thirdText?: string }
-> = ({ finalText, reverse, secondText, src, text, thirdText, title, ul }) => {
+export const Offer: React.FC<OfferType> = ({
+  reverse,
+  secondText,
+  src,
+  text,
+  thirdText,
+  title,
+  ul,
+}) => {
   return (
     <motion.section className={classes.container}>
-      <motion.h2
-        className={classes.title}
-        initial="hidden"
-        variants={animation}
-        viewport={{ once: true }}
-        whileInView="visible"
-      >
-        {title}
-      </motion.h2>
-
-      <Divider />
-
       <motion.div
         initial="hidden"
         variants={animation}
         viewport={{ once: true }}
         whileInView="visible"
       >
+        <h2 className={classes.title}>{title}</h2>
+
+        <Divider />
+
         <p className={classes.text}>{text}</p>
 
         {secondText ? <p className={classes.text}>{secondText}</p> : null}
@@ -47,18 +45,6 @@ export const Offer: React.FC<
 
         <MotionUl ul={ul} reverse={reverse} />
       </motion.div>
-
-      {finalText ? (
-        <motion.p
-          className={cn(classes.text, classes.mt_1)}
-          initial="hidden"
-          variants={animation}
-          viewport={{ once: true }}
-          whileInView="visible"
-        >
-          {finalText}
-        </motion.p>
-      ) : null}
     </motion.section>
   )
 }

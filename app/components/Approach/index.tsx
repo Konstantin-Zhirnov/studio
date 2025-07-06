@@ -9,69 +9,51 @@ import { Divider } from '@/app/components/Divider'
 
 import classes from './Approach.module.sass'
 
-export const Approach: React.FC = () => {
+export const Approach = () => {
   return (
     <motion.section className={classes.container}>
-      <motion.h3
-        className={classes.title}
+      <motion.div
         initial="hidden"
-        whileInView="visible"
         variants={animation}
         viewport={{ once: true }}
-      >
-        Our Approach
-      </motion.h3>
-
-      <Divider />
-
-      <motion.p
-        className={classes.text}
-        initial="hidden"
         whileInView="visible"
-        variants={animation}
-        viewport={{ once: true }}
       >
-        We value every client and strive for long-term cooperation. Our development process includes
-        the following stages:
-      </motion.p>
+        <h3 className={classes.title}>Our Approach</h3>
 
-      <motion.ol
-        className={classes.ol}
-        initial="hidden"
-        whileInView="visible"
-        variants={animation}
-        viewport={{ once: true }}
-      >
-        <li>
-          <span>1. Consultation and Analysis:</span> Identifying the needs and requirements of the
-          client.
-        </li>
+        <Divider />
 
-        <li>
-          <span>2. Planning and Design:</span> Creating the concept and designing the interfaces.
-        </li>
+        <p className={classes.text}>
+          We value every client and strive for long-term cooperation. Our development process
+          includes the following stages:
+        </p>
 
-        <li>
-          <span>3. Development and Testing:</span> Writing code and thoroughly testing the product.
-        </li>
+        <ol className={classes.ol}>
+          <li>
+            <span>1. Consultation and Analysis:</span> Identifying the needs and requirements of the
+            client.
+          </li>
 
-        <li>
-          <span>4. Launch and Support:</span> Implementing the product and providing support
-          throughout its lifecycle.
-        </li>
-      </motion.ol>
+          <li>
+            <span>2. Planning and Design:</span> Creating the concept and designing the interfaces.
+          </li>
 
-      <motion.p
-        className={classes.text}
-        initial="hidden"
-        whileInView="visible"
-        variants={animation}
-        viewport={{ once: true }}
-      >
-        By choosing us, you will gain a reliable partner ready to turn your ideas into modern,
-        efficient, and attractive digital solutions. Contact us to discuss your project and receive
-        a personalized offer.
-      </motion.p>
+          <li>
+            <span>3. Development and Testing:</span> Writing code and thoroughly testing the
+            product.
+          </li>
+
+          <li>
+            <span>4. Launch and Support:</span> Implementing the product and providing support
+            throughout its lifecycle.
+          </li>
+        </ol>
+
+        <p className={classes.text}>
+          By choosing us, you will gain a reliable partner ready to turn your ideas into modern,
+          efficient, and attractive digital solutions. Contact us to discuss your project and
+          receive a personalized offer.
+        </p>
+      </motion.div>
     </motion.section>
   )
 }

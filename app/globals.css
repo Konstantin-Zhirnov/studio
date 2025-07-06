@@ -9,25 +9,23 @@
   --color-text: #cdc6c3;
   --gallery-gap: calc(var(--index) * 7.5)
 }
-@font-face {
-  font-family: raleway-c;
-  src: url(/fonts/raleway-regular.woff2);
-}
+
 @font-face {
   font-family: outfit-c;
   src: url(/fonts/outfit-regular.woff2);
 }
-h1, h2, h3, h4, h5, h6 {
+
+h1 {
   font-family: outfit-c, serif;
 }
-/* will-change */
+
 .content, .hero, .main-header, .gallery > * {
   will-change: transform;
 }
+
 body {
-  background-image: url(/images/bg.jpg);
-  background-size: 50px;
-  color: #fafafa;
-  font-family: raleway-c, serif;
+  background: #13151a;
+  color: #b4b8c6;
+  font-family: Inter, sans-serif;
   overflow-x: hidden;
 }

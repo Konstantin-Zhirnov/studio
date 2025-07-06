@@ -1,20 +1,11 @@
 import React from 'react'
-import { motion } from 'framer-motion'
-
-import { animation } from '@/constants'
 
 import classes from './Divider.module.sass'
 
-const Divider: React.FC = () => {
+export const Divider = () => {
   return (
-    <motion.div
-      className={classes.container}
-      initial="hidden"
-      whileInView="visible"
-      variants={animation}
-    >
+    <div className={classes.container}>
       <div className={classes.divider} />
-    </motion.div>
+    </div>
   )
 }
-export { Divider }

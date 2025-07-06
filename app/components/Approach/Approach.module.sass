@@ -3,21 +3,19 @@
   margin-bottom: 6rem
 
   .title
-    font-family: outfit-c, serif
     font-size: calc(var(--index) * 4)
+    font-weight: 500
     text-align: center
-    color: #FAFAFA
+    color: #e9eaeb
     line-height: 1.1
 
   .text
-    font-family: raleway-c, serif
     font-size: calc(var(--index) * 1.6)
     letter-spacing: 0.01rem
-    text-align: center
+    text-indent: 2rem
     margin-bottom: 2rem
 
   .ol
-    font-family: raleway-c, serif
     font-size: calc(var(--index) * 1.2)
     letter-spacing: 0.01rem
     list-style: none
@@ -27,8 +25,11 @@
     li
       margin-bottom: 0.9rem
       span
-        font-family: outfit-c, serif
         font-size: calc(var(--index) * 1.2)
         font-weight: bold
-        color: #6865F7
+        color: #e9eaeb
         text-transform: uppercase
+
+@media only screen and (max-width: 640px)
+  .container
+    margin-bottom: 4rem

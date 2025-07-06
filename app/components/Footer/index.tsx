@@ -1,9 +1,7 @@
-import React from 'react'
-
 import classes from './Footer.module.sass'
 import Image from 'next/image'
 
-const Footer: React.FC = () => {
+export const Footer = () => {
   return (
     <footer className={classes.container}>
       <ul className={classes.ul}>
@@ -22,6 +20,7 @@ const Footer: React.FC = () => {
             <p className={classes.text}>(250) 797-28-34</p>
           </a>
         </li>
+
         <li>
           <a href="mailto:kostya.zhirnov@gmail.com">
             <div className={classes.title}>
@@ -32,8 +31,10 @@ const Footer: React.FC = () => {
                 height={24}
                 className={classes.img}
               />
+
               <p>Email:</p>
             </div>
+
             <p className={classes.text}>kostya.zhirnov@gmail.com</p>
           </a>
         </li>
@@ -41,5 +42,3 @@ const Footer: React.FC = () => {
     </footer>
   )
 }
-
-export { Footer }
