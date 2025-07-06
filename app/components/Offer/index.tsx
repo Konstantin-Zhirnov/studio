@@ -12,34 +12,53 @@ import { MotionUl } from '@/app/components/Offer/MotionUl'
 
 import classes from './Offer.module.sass'
 
-const Offer: React.FC<OfferType & { reverse?: boolean }> = ({ title, text, src, ul, reverse }) => {
+export const Offer: React.FC<
+  OfferType & { finalText?: string; reverse?: boolean; secondText?: string; thirdText?: string }
+> = ({ finalText, reverse, secondText, src, text, thirdText, title, ul }) => {
   return (
     <motion.section className={classes.container}>
       <motion.h2
         className={classes.title}
         initial="hidden"
-        whileInView="visible"
         variants={animation}
+        viewport={{ once: true }}
+        whileInView="visible"
       >
         {title}
       </motion.h2>
+
       <Divider />
-      <motion.p
-        className={classes.text}
+
+      <motion.div
         initial="hidden"
-        whileInView="visible"
         variants={animation}
+        viewport={{ once: true }}
+        whileInView="visible"
       >
-        {text}
-      </motion.p>
+        <p className={classes.text}>{text}</p>
+
+        {secondText ? <p className={classes.text}>{secondText}</p> : null}
+
+        {thirdText ? <p className={classes.text}>{thirdText}</p> : null}
+      </motion.div>
 
       <motion.div className={cn(classes.offers, { [classes.reverse]: reverse })}>
         <MotionImage src={src} reverse={reverse} />
 
         <MotionUl ul={ul} reverse={reverse} />
       </motion.div>
+
+      {finalText ? (
+        <motion.p
+          className={cn(classes.text, classes.mt_1)}
+          initial="hidden"
+          variants={animation}
+          viewport={{ once: true }}
+          whileInView="visible"
+        >
+          {finalText}
+        </motion.p>
+      ) : null}
     </motion.section>
   )
 }
-
-export { Offer }

@@ -5,7 +5,7 @@ import { motion, useScroll, useTransform, useSpring } from 'framer-motion'
 
 import classes from './Hero.module.sass'
 
-const Hero: React.FC = () => {
+export const Hero: React.FC = () => {
   const speed = -0.5
   const { scrollY, scrollYProgress } = useScroll()
   const y = useTransform(scrollY, (value) => value * speed)
@@ -29,5 +29,3 @@ const Hero: React.FC = () => {
     </motion.section>
   )
 }
-
-export { Hero }

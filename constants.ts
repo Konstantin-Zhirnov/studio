@@ -1,7 +1,12 @@
 export const offers = [
   {
-    title: 'Website Development',
-    text: 'Our company offers a full range of services for developing websites of any complexity. We you need a corporate website, an online store, a blog, or a portfolio, our team of experienced developers and designers will bring your ideas to life. We provide:',
+    title: 'Create a Website',
+    text: "Create websites that stand out with our expert team of designers and developers. Whether you're launching your first site or upgrading an existing one, we build responsive, visually compelling websites tailored to your goals. From sleek portfolios to powerful e-commerce platforms, every project is optimized for performance, user experience, and search engines.",
+    secondText:
+      'Our company offers a full range of web development services — from corporate websites and blogs to online stores and personal portfolios. Whether you need to create website solutions from scratch or improve an existing platform, we’re here to help at every step.',
+    thirdText: 'Here’s what we deliver:',
+    finalText:
+      'Let us turn your vision into a digital reality — professionally, efficiently, and with a creative touch.',
     src: '/images/web.svg',
     ul: [
       {
@@ -24,7 +29,7 @@ export const offers = [
   },
 
   {
-    title: 'Web Application Development',
+    title: 'Create a Web Application',
     text: 'We specialize in creating powerful and efficient web applications that help automate and optimize business processes. Our solutions are tailored to the specific requirements of the client and include:',
     src: '/images/development.svg',
     ul: [
@@ -47,7 +52,7 @@ export const offers = [
     ],
   },
   {
-    title: 'Mobile Application Development',
+    title: 'Create a Mobile Application',
     text: 'We create high-quality mobile applications for iOS and Android that feature intuitive interfaces and high performance. Our services include:',
     src: '/images/mobile.svg',
     ul: [

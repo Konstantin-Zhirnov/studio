@@ -3,15 +3,13 @@ import React from 'react'
 import './globals.css'
 
 export const metadata = {
-  title: 'Digital Nanaimo',
-  description:
-    'Our company is engaged in the creation of websites, mobile applications and web applications of any complexity using the most modern technology stack. We are ready to cooperate with both companies and individuals.',
-  keywords: 'mobile applications, web applications, website',
+  title: 'Create a Website',
+  description: 'Create websites that stand out with our expert team of designers and developers.',
+  keywords: 'create website, mobile applications, web applications, website',
   openGraph: {
-    title: 'Digital Nanaimo',
-    description:
-      'Our company is engaged in the creation of websites, mobile applications and web applications of any complexity using the most modern technology stack. We are ready to cooperate with both companies and individuals.',
-    url: 'https://nanaimo.digital',
+    title: 'Create a Website',
+    description: 'Create websites that stand out with our expert team of designers and developers.',
+    url: 'https://create-website.ca',
   },
 }
 

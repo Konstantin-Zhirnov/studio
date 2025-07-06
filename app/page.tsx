@@ -14,12 +14,15 @@ export default function Home() {
 
       {offers.map((item, index) => (
         <Offer
+          finalText={item.finalText}
           key={item.title}
-          title={item.title}
-          text={item.text}
-          src={item.src}
-          ul={item.ul}
           reverse={index % 2 !== 0}
+          secondText={item.secondText}
+          src={item.src}
+          text={item.text}
+          thirdText={item.thirdText}
+          title={item.title}
+          ul={item.ul}
         />
       ))}
 
