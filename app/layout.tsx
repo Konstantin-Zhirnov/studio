@@ -26,7 +26,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body suppressHydrationWarning={true}>{children}</body>
+      <body suppressHydrationWarning={true}>
+        {children}
+        <div id="modal-root" />
+      </body>
     </html>
   )
 }

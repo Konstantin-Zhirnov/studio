@@ -10,16 +10,24 @@
   },
   "dependencies": {
     "@gsap/react": "^2.1.1",
+    "@hookform/error-message": "^2.0.1",
+    "@hookform/resolvers": "^5.1.1",
     "classnames": "^2.5.1",
+    "dotenv": "^17.0.1",
     "framer-motion": "^11.2.6",
     "next": "14.2.3",
+    "nodemailer": "^7.0.4",
     "prettier": "^3.2.5",
     "react": "^18",
     "react-dom": "^18",
-    "sass": "^1.77.2"
+    "react-hook-form": "^7.60.0",
+    "react-toastify": "^11.0.5",
+    "sass": "^1.77.2",
+    "yup": "^1.6.1"
   },
   "devDependencies": {
     "@types/node": "^20",
+    "@types/nodemailer": "^6.4.17",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",

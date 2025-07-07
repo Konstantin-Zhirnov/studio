@@ -1,4 +1,5 @@
 import React from 'react'
+import { ToastContainer } from 'react-toastify'
 
 import { offers } from '@/constants'
 
@@ -28,6 +29,19 @@ export default function Home() {
       <Approach />
 
       <Footer />
+
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
     </>
   )
 }

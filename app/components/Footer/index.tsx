@@ -1,5 +1,6 @@
 import classes from './Footer.module.sass'
 import Image from 'next/image'
+import { Message } from '@/app/components/Message'
 
 export const Footer = () => {
   return (
@@ -15,28 +16,14 @@ export const Footer = () => {
                 height={24}
                 className={classes.img}
               />
-              <p>Phone:</p>
+
+              <p className={classes.text}>(250) 797-28-34</p>
             </div>
-            <p className={classes.text}>(250) 797-28-34</p>
           </a>
         </li>
 
         <li>
-          <a href="mailto:kostya.zhirnov@gmail.com">
-            <div className={classes.title}>
-              <Image
-                src="/images/email.svg"
-                alt="Email"
-                width={24}
-                height={24}
-                className={classes.img}
-              />
-
-              <p>Email:</p>
-            </div>
-
-            <p className={classes.text}>kostya.zhirnov@gmail.com</p>
-          </a>
+          <Message />
         </li>
       </ul>
     </footer>
