@@ -1,0 +1,22 @@
+.footer { padding: 0 16px 28px; }
+.container { max-width: 1120px; margin: 0 auto; }
+
+.panel {
+    padding: 16px;
+    border-radius: 18px;
+    background: rgba(255,255,255,.04);
+    border: 1px solid rgba(255,255,255,.08);
+    backdrop-filter: blur(16px);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+@media (min-width: 980px) { .panel { flex-direction: row; justify-content: space-between; align-items: center; } }
+
+.brand { font-size: 13px; font-weight: 850; color: rgba(242,245,255,.92); }
+.small { margin-top: 6px; font-size: 13px; color: rgba(242,245,255,.58); line-height: 1.6; max-width: 78ch; }
+
+.links { display: flex; flex-wrap: wrap; gap: 14px; font-size: 13px; color: rgba(242,245,255,.60); }
+.links a:hover { color: rgba(242,245,255,.92); }
+
+.copy { margin-top: 10px; font-size: 12px; color: rgba(242,245,255,.45); }

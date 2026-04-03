@@ -1,0 +1,23 @@
+.section { padding: 44px 16px 10px; }
+.container { max-width: 1120px; margin: 0 auto; }
+
+.head { display: grid; gap: 10px; }
+.h2 { margin: 0; font-size: 28px; font-weight: 780; letter-spacing: -0.3px; }
+.lead { margin: 0; color: rgba(242,245,255,.70); font-size: 14px; line-height: 1.6; max-width: 72ch; }
+@media (min-width: 980px) { .h2 { font-size: 38px; } .lead { font-size: 16px; } }
+
+.grid { margin-top: 16px; display: grid; gap: 12px; }
+@media (min-width: 980px) { .grid { grid-template-columns: repeat(4, 1fr); gap: 14px; } }
+
+.card {
+    padding: 16px;
+    border-radius: 18px;
+    background: rgba(255,255,255,.05);
+    border: 1px solid rgba(255,255,255,.10);
+    backdrop-filter: blur(16px);
+    box-shadow: 0 20px 80px rgba(0,0,0,.45), 0 0 0 1px rgba(255,255,255,.06);
+}
+
+.num { font-size: 12px; font-weight: 850; color: rgba(242,245,255,.55); }
+.title { margin-top: 10px; font-size: 16px; font-weight: 850; }
+.desc { margin-top: 8px; font-size: 13px; color: rgba(242,245,255,.70); line-height: 1.6; }
