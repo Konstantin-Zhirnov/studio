@@ -1,14 +1,15 @@
 'use client'
 
+import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { SubmitHandler, useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import { toast } from 'react-toastify'
 import * as yup from 'yup'
 
-import styles from './Contact.module.css'
 import { fadeUp } from '@/components/motion/motionPresets'
-import { useState } from 'react'
+
+import styles from './Contact.module.css'
 
 export default function Contact() {
   const [isLoading, setIsLoading] = useState(false)
@@ -47,16 +48,7 @@ export default function Contact() {
         if (res.status === 200) {
           reset()
 
-          toast.success('Your message has been sent successfully!', {
-            position: 'top-right',
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: false,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: 'dark',
-          })
+          toast.success('Message delivered!')
         }
       })
       .finally(() => {
