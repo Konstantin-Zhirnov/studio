@@ -17,21 +17,21 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Web Design & Development | Nanaimo & Vancouver Island',
+  title: 'Web Solutions | Nanaimo & Vancouver Island',
   description:
     'Websites, web applications, and e‑commerce for small businesses in Nanaimo and across Vancouver Island. Modern design, fast performance, local SEO, and ongoing support.',
   openGraph: {
-    title: 'Web Design & Development | Nanaimo & Vancouver Island',
+    title: 'Web Solutions | Nanaimo & Vancouver Island',
     description:
       'Modern websites and web apps for small businesses on Vancouver Island—fast, mobile‑friendly, SEO‑ready, and built to convert.',
     url: 'https://create-website.ca',
-    siteName: 'VI Web Studio',
+    siteName: 'Web Solutions',
     images: [
       {
         url: 'https://create-website.ca/images/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Web Studio — Websites & Web Apps for Vancouver Island small businesses',
+        alt: 'Web Solutions — Websites & Web Apps for Vancouver Island small businesses',
       },
     ],
     locale: 'en_CA',
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Web Design & Development | Nanaimo & Vancouver Island',
+    title: 'Web Solutions | Nanaimo & Vancouver Island',
     description:
       'Websites, web apps, and e‑commerce for small businesses on Vancouver Island. Fast, modern, SEO‑ready.',
     images: ['https://create-website.ca/images/og-image.jpg'],

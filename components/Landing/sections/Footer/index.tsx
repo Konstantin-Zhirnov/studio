@@ -6,7 +6,7 @@ export default function Footer() {
       <div className={styles.container}>
         <div className={styles.panel}>
           <div>
-            <div className={styles.brand}>Web Studio</div>
+            <div className={styles.brand}>Web Solutions</div>
 
             <div className={styles.small}>
               Websites & web apps for small businesses in Nanaimo and Vancouver Island.
@@ -21,7 +21,7 @@ export default function Footer() {
         </div>
 
         <div className={styles.copy}>
-          © {new Date().getFullYear()} Web Studio. All rights reserved.
+          © {new Date().getFullYear()} Web Solutions. All rights reserved.
         </div>
       </div>
     </footer>

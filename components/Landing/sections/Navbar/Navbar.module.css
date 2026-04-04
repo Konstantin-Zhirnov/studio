@@ -22,10 +22,8 @@
 }
 
 .logo {
-    font-size: 13px;
-    font-weight: 800;
-    letter-spacing: 0.2px;
-    color: rgba(242,245,255,.92);
+    width: 4.6rem;
+    height: auto;
 }
 
 .nav {

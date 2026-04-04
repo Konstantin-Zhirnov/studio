@@ -51,9 +51,7 @@ export default function Navbar() {
         transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
         className={styles.wrap}
       >
-        <a className={styles.logo} href="#" onClick={onClose}>
-          Web Studio
-        </a>
+        <img className={styles.logo} src="/images/web-solutions.png" onClick={onClose} />
 
         <nav className={styles.nav}>
           {links.map((l) => (

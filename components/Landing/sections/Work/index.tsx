@@ -67,40 +67,38 @@ export default function Work() {
                 </div>
 
                 {p?.link ? (
-                  <>
-                    <div className={styles.wrapper}>
-                      <a
-                        className={styles.thumb}
-                        href={p.link}
-                        target="_blank"
-                        rel="noreferrer"
-                        aria-label={`${p.name} website`}
-                      >
-                        <Image
-                          src={p.src}
-                          alt={p.name}
-                          fill
-                          sizes="(max-width: 980px) 100vw, 240px"
-                          className={`${styles.image} ${p.name === 'FindPro' ? styles.imageBright : ''}`}
-                          priority={p.name === 'Laser Cleaning LTD'}
-                        />
-                        <span className={styles.thumbBadge}>Live</span>
-                      </a>
-
-                      <div className={styles.result}>
-                        Result: <span className={styles.strong}>{p.result}</span>
-                      </div>
-                    </div>
-
-                    <a className={styles.link} href={p.link} target="_blank" rel="noreferrer">
-                      Build something like this →
+                  <div className={styles.wrapper}>
+                    <a
+                      className={styles.thumb}
+                      href={p.link}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label={`${p.name} website`}
+                    >
+                      <Image
+                        src={p.src}
+                        alt={p.name}
+                        fill
+                        sizes="(max-width: 980px) 100vw, 240px"
+                        className={`${styles.image} ${p.name === 'FindPro' ? styles.imageBright : ''}`}
+                        priority={p.name === 'Laser Cleaning LTD'}
+                      />
+                      <span className={styles.thumbBadge}>Live</span>
                     </a>
-                  </>
+
+                    <div className={styles.result}>
+                      Result: <span className={styles.strong}>{p.result}</span>
+                    </div>
+                  </div>
                 ) : (
                   <div className={styles.result}>
                     Result: <span className={styles.strong}>{p.result}</span>
                   </div>
                 )}
+
+                <a className={styles.link} href="#contact">
+                  Build something like this →
+                </a>
               </motion.div>
             </motion.article>
           ))}
