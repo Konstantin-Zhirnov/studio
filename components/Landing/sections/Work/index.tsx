@@ -13,14 +13,14 @@ const items = [
     tag: 'Website + Local SEO',
     result: '+ more calls & quote requests',
     link: 'https://laser-cleaning.ca/',
-    src: '/images/laser-cleaning.jpg',
+    src: '/images/laser-cleaning.webp',
   },
   {
     name: 'PAHLAVAN General Contracting Inc',
     tag: 'Website refresh',
     result: 'Faster load + improved UX',
     link: 'https://pgcdrywall.com/',
-    src: '/images/pgcdrywall.jpg',
+    src: '/images/pgcdrywall.webp',
   },
   {
     name: 'FindPro',
@@ -28,7 +28,7 @@ const items = [
     result:
       'Connects people who need services with professionals who provide them — one place for everyone.',
     link: 'https://findpro.ca/',
-    src: '/images/findpro.jpg',
+    src: '/images/findpro.webp',
   },
   { name: 'Service Business', tag: 'Booking + forms', result: 'Less admin time' },
 ]
@@ -92,7 +92,7 @@ export default function Work() {
                       </div>
                     </div>
 
-                    <a className={styles.link} href={p.link} target="_blank">
+                    <a className={styles.link} href={p.link} target="_blank" rel="noreferrer">
                       Build something like this →
                     </a>
                   </>
