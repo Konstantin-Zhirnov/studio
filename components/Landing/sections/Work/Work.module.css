@@ -3,7 +3,7 @@
 
 .head { display: grid; gap: 10px; }
 .h2 { margin: 0; font-size: 28px; font-weight: 780; letter-spacing: -0.3px; }
-.lead { margin: 0; color: rgba(242,245,255,.70); font-size: 14px; line-height: 1.6; max-width: 76ch; }
+.lead { margin: 0; color: rgba(242,245,255,.70); font-size: 14px; line-height: 1.6; max-width: 82ch; }
 @media (min-width: 980px) { .h2 { font-size: 38px; } .lead { font-size: 16px; } }
 
 .grid { margin-top: 16px; display: grid; gap: 12px; }
@@ -18,7 +18,7 @@
     box-shadow: 0 20px 80px rgba(0,0,0,.45), 0 0 0 1px rgba(255,255,255,.06);
 }
 
-.top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+.top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 1.4rem}
 .title { font-size: 16px; font-weight: 800; }
 .tag { margin-top: 5px; font-size: 13px; color: rgba(242,245,255,.68); }
 
@@ -31,8 +31,75 @@
     border: 1px solid rgba(255,255,255,.10);
 }
 
+.wrapper {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 220px 1fr;
+    align-items: stretch;
+}
+
+@media (max-width: 720px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+.thumb {
+    position: relative;
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,.10);
+    background: rgba(255,255,255,.04);
+    box-shadow: 0 18px 60px rgba(0,0,0,.45);
+    aspect-ratio: 16 / 10;
+}
+
+.image {
+    object-fit: cover;
+    object-position: top center;
+    border-radius: 0; /* не нужно, контейнер уже округлен */
+    transform: scale(1.02);
+    transition: transform .25s ease, filter .25s ease;
+    filter: saturate(1.06) contrast(1.02);
+}
+
+/* общий "дорогой" затемняющий слой для читаемости */
+.thumb::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(11,15,23,.10), rgba(11,15,23,.42));
+    opacity: .55;
+    pointer-events: none;
+}
+
+/* если картинка слишком яркая (например FindPro) */
+.imageBright {
+    filter: saturate(1.0) contrast(1.0) brightness(.92);
+}
+
+/* hover */
+.card:hover .image {
+    transform: scale(1.06);
+}
+
+.thumbBadge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 6px 8px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 850;
+    color: rgba(242,245,255,.85);
+    background: rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.12);
+    backdrop-filter: blur(10px);
+}
+
 .result {
-    margin-top: 14px;
+    flex: 1;
     padding: 12px;
     border-radius: 14px;
     background: linear-gradient(90deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
@@ -41,6 +108,8 @@
     font-size: 13px;
 }
 .strong { color: rgba(242,245,255,.92); font-weight: 800; }
+
+
 
 .link { display: inline-flex; margin-top: 14px; font-size: 13px; font-weight: 780; color: rgba(103,232,249,.95); }
 .link:hover { color: rgba(165,243,252,.95); }

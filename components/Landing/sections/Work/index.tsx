@@ -1,8 +1,11 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import styles from './Work.module.css'
+import Image from 'next/image'
+
 import { fadeUp, hoverLift, stagger } from '@/components/motion/motionPresets'
+
+import styles from './Work.module.css'
 
 const items = [
   {
@@ -10,12 +13,14 @@ const items = [
     tag: 'Website + Local SEO',
     result: '+ more calls & quote requests',
     link: 'https://laser-cleaning.ca/',
+    src: '/images/laser-cleaning.jpg',
   },
   {
     name: 'PAHLAVAN General Contracting Inc',
     tag: 'Website refresh',
     result: 'Faster load + improved UX',
     link: 'https://pgcdrywall.com/',
+    src: '/images/pgcdrywall.jpg',
   },
   {
     name: 'FindPro',
@@ -23,6 +28,7 @@ const items = [
     result:
       'Connects people who need services with professionals who provide them — one place for everyone.',
     link: 'https://findpro.ca/',
+    src: '/images/findpro.jpg',
   },
   { name: 'Service Business', tag: 'Booking + forms', result: 'Less admin time' },
 ]
@@ -33,6 +39,7 @@ export default function Work() {
       <div className={styles.container}>
         <motion.div {...fadeUp} className={styles.head}>
           <h2 className={styles.h2}>Recent Work</h2>
+
           <p className={styles.lead}>
             Replace these placeholders with real case studies (even 3 strong ones improve
             conversions a lot).
@@ -55,20 +62,45 @@ export default function Work() {
 
                     <div className={styles.tag}>{p.tag}</div>
                   </div>
+
                   <div className={styles.badge}>Case</div>
                 </div>
 
-                <div className={styles.result}>
-                  Result: <span className={styles.strong}>{p.result}</span>
-                </div>
+                {p?.link ? (
+                  <>
+                    <div className={styles.wrapper}>
+                      <a
+                        className={styles.thumb}
+                        href={p.link}
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label={`${p.name} website`}
+                      >
+                        <Image
+                          src={p.src}
+                          alt={p.name}
+                          fill
+                          sizes="(max-width: 980px) 100vw, 240px"
+                          className={`${styles.image} ${p.name === 'FindPro' ? styles.imageBright : ''}`}
+                          priority={p.name === 'Laser Cleaning LTD'}
+                        />
+                        <span className={styles.thumbBadge}>Live</span>
+                      </a>
 
-                <a
-                  className={styles.link}
-                  href={p?.link || '#contact'}
-                  target={p?.link ? '_blank' : '_self'}
-                >
-                  Build something like this →
-                </a>
+                      <div className={styles.result}>
+                        Result: <span className={styles.strong}>{p.result}</span>
+                      </div>
+                    </div>
+
+                    <a className={styles.link} href={p.link} target="_blank">
+                      Build something like this →
+                    </a>
+                  </>
+                ) : (
+                  <div className={styles.result}>
+                    Result: <span className={styles.strong}>{p.result}</span>
+                  </div>
+                )}
               </motion.div>
             </motion.article>
           ))}
