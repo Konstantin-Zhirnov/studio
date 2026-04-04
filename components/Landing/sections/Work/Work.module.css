@@ -57,8 +57,8 @@
 
 .image {
     object-fit: cover;
-    object-position: top center;
-    border-radius: 0; /* не нужно, контейнер уже округлен */
+    object-position: top left;
+    border-radius: 0;
     transform: scale(1.02);
     transition: transform .25s ease, filter .25s ease;
     filter: saturate(1.06) contrast(1.02);
