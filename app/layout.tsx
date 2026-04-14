@@ -4,6 +4,7 @@ import { Geist, Geist_Mono } from 'next/font/google'
 import Script from 'next/script'
 
 import Toasts from '@/components/Toasts'
+import { Phone } from '@/components/Phone'
 
 import './globals.css'
 
@@ -58,6 +59,8 @@ export default function RootLayout({
         {children}
 
         <Toasts />
+
+        <Phone />
 
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=AW-17852461067"
