@@ -4,7 +4,7 @@ import styles from './Phone.module.css'
 
 export const Phone = () => {
   return (
-    <a href="tel:2508025654" className={styles.btn}>
+    <a href="tel:2507972834" className={styles.btn}>
       <svg
         fill="currentColor"
         viewBox="0 0 512 512"
