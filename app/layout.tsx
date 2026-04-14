@@ -1,6 +1,7 @@
 import { ReactNode } from 'react'
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
+import Script from 'next/script'
 
 import Toasts from '@/components/Toasts'
 
@@ -57,6 +58,20 @@ export default function RootLayout({
         {children}
 
         <Toasts />
+
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17852461067"
+          strategy="afterInteractive"
+        />
+
+        <Script id="google-tag" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-17852461067');
+          `}
+        </Script>
       </body>
     </html>
   )
