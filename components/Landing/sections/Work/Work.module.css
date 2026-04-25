@@ -4,9 +4,11 @@
 .head { display: grid; gap: 10px; }
 .h2 { margin: 0; font-size: 28px; font-weight: 780; letter-spacing: -0.3px; }
 .lead { margin: 0; color: rgba(242,245,255,.70); font-size: 14px; line-height: 1.6; max-width: 82ch; }
+
 @media (min-width: 980px) { .h2 { font-size: 38px; } .lead { font-size: 16px; } }
 
 .grid { margin-top: 16px; display: grid; gap: 12px; }
+
 @media (min-width: 980px) { .grid { grid-template-columns: repeat(2, 1fr); gap: 14px; } }
 
 .card {
@@ -19,7 +21,9 @@
 }
 
 .top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 1.4rem}
+
 .title { font-size: 16px; font-weight: 800; }
+
 .tag { margin-top: 5px; font-size: 13px; color: rgba(242,245,255,.68); }
 
 .badge {
