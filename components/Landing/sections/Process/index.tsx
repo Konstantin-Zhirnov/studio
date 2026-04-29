@@ -8,10 +8,22 @@ import TiltCard from '@/components/motion/TiltCard'
 import styles from './Process.module.css'
 
 const steps = [
-  { n: '01', t: 'Discovery', d: 'Quick call + goals, scope, timeline.' },
-  { n: '02', t: 'Design', d: 'Modern layout, clear copy structure, conversion flow.' },
-  { n: '03', t: 'Build', d: 'Next.js build, responsive, SEO foundations, performance-first.' },
-  { n: '04', t: 'Launch & Support', d: 'Deploy, track, and improve. Maintenance available.' },
+  {
+    n: '01',
+    t: 'Website Discovery: Understanding Your Needs',
+    d: 'Quick call + goals, scope, timeline.',
+  },
+  { n: '02', t: 'Website Design', d: 'Modern layout, clear copy structure, conversion flow.' },
+  {
+    n: '03',
+    t: 'Website Build & Development',
+    d: 'Next.js build, responsive, SEO foundations, performance-first.',
+  },
+  {
+    n: '04',
+    t: 'Website Launch & Ongoing Support',
+    d: 'Deploy, track, and improve. Maintenance available.',
+  },
 ]
 
 export default function Process() {
@@ -19,7 +31,7 @@ export default function Process() {
     <section id="process" className={styles.section}>
       <div className={styles.container}>
         <motion.div {...fadeUp} className={styles.head}>
-          <h2 className={styles.h2}>Process</h2>
+          <h2 className={styles.h2}>How We Create Your Website</h2>
           <p className={styles.lead}>Simple and clear—from first call to launch.</p>
         </motion.div>
 

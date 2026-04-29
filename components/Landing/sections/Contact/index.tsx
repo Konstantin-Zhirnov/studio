@@ -61,7 +61,7 @@ export default function Contact() {
       <div className={styles.container}>
         <motion.div {...fadeUp} className={styles.panel}>
           <div className={styles.left}>
-            <h2 className={styles.h2}>Tell us about your project</h2>
+            <h2 className={styles.h2}>Start Creating Your Website</h2>
 
             <p className={styles.lead}>
               Share your business, goals, and timeline. We’ll reply within 1 business day.

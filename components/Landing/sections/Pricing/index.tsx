@@ -31,7 +31,7 @@ export default function Pricing() {
     <section id="pricing" className={styles.section}>
       <div className={styles.container}>
         <motion.div {...fadeUp} className={styles.head}>
-          <h2 className={styles.h2}>Pricing</h2>
+          <h2 className={styles.h2}>Website Creation Pricing</h2>
           <p className={styles.lead}>
             Transparent ranges for Vancouver Island small businesses. Final pricing depends on scope
             and timeline.
@@ -66,7 +66,7 @@ export default function Pricing() {
                 </ul>
 
                 <a className={styles.btn} href="#contact">
-                  Get a quote
+                  Create Your Website
                 </a>
               </motion.div>
             </motion.article>

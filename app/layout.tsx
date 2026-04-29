@@ -1,7 +1,6 @@
 import { ReactNode } from 'react'
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
-import Script from 'next/script'
 
 import Toasts from '@/components/Toasts'
 import { Phone } from '@/components/Phone'
@@ -19,13 +18,13 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Web Solutions | Nanaimo & Vancouver Island',
+  title: 'Create a Website for Small Businesses on Vancouver Island | Web Solutions',
   description:
-    'Websites, web applications, and e‑commerce for small businesses in Nanaimo and across Vancouver Island. Modern design, fast performance, local SEO, and ongoing support.',
+    'Create a website for your business without hassle! Our website creation services include modern design, fast loading, SEO optimization, and full support—everything you need to quickly build a website and attract new customers.',
   openGraph: {
-    title: 'Web Solutions | Nanaimo & Vancouver Island',
+    title: 'Create a Website for Small Businesses on Vancouver Island | Web Solutions',
     description:
-      'Modern websites and web apps for small businesses on Vancouver Island—fast, mobile‑friendly, SEO‑ready, and built to convert.',
+      'Create a website for your business without hassle! Our website creation services include modern design, fast loading, SEO optimization, and full support—everything you need to quickly build a website and attract new customers.',
     url: 'https://create-website.ca',
     siteName: 'Web Solutions',
     images: [
@@ -33,7 +32,7 @@ export const metadata: Metadata = {
         url: 'https://create-website.ca/images/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Web Solutions — Websites & Web Apps for Vancouver Island small businesses',
+        alt: 'Create a Website for Small Businesses on Vancouver Island | Web Solutions',
       },
     ],
     locale: 'en_CA',
@@ -41,9 +40,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Web Solutions | Nanaimo & Vancouver Island',
+    title: 'Create a Website for Small Businesses on Vancouver Island | Web Solutions',
     description:
-      'Websites, web apps, and e‑commerce for small businesses on Vancouver Island. Fast, modern, SEO‑ready.',
+      'Create a website for your business without hassle! Our website creation services include modern design, fast loading, SEO optimization, and full support—everything you need to quickly build a website and attract new customers.',
     images: ['https://create-website.ca/images/og-image.jpg'],
   },
 }
@@ -61,20 +60,6 @@ export default function RootLayout({
         <Toasts />
 
         <Phone />
-
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=AW-17852461067"
-          strategy="afterInteractive"
-        />
-
-        <Script id="google-tag" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'AW-17852461067');
-          `}
-        </Script>
       </body>
     </html>
   )

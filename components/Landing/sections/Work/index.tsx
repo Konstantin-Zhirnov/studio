@@ -15,6 +15,7 @@ const items = [
       'Significantly Improved Loading Speed + Modern and Professional Design + Full Mobile Responsiveness + Increased Customer Engagement and Leads + Strengthened SEO and Online Promotion',
     link: 'https://laser-cleaning.ca/',
     src: '/images/laser-cleaning.webp',
+    alt: 'create a website',
   },
   {
     name: 'Yankovska School of Rhythmic Gymnastics',
@@ -23,6 +24,7 @@ const items = [
       'Significantly Improved Page Load Speed + Modern and Attractive Design + Mobile Responsiveness + Increased Engagement and Traffic',
     link: 'https://yankovskaschool.vercel.app/',
     src: '/images/yankovskaschool.webp',
+    alt: 'website creation on Vancouver Island',
   },
   {
     name: 'PAHLAVAN General Contracting Inc',
@@ -31,6 +33,7 @@ const items = [
       'Significantly Enhanced Loading Speed + Modern and Clean Design + Improved and User-Friendly Navigation + Increased Number of Inquiries and Leads + Improved SEO',
     link: 'https://pgcdrywall.com/',
     src: '/images/pgcdrywall.webp',
+    alt: 'website creation for small businesses',
   },
   {
     name: 'FindPro',
@@ -39,6 +42,7 @@ const items = [
       'Connects people who need services with professionals who provide them — one place for everyone.',
     link: 'https://findpro.ca/',
     src: '/images/findpro.webp',
+    alt: 'create a website',
   },
 ]
 
@@ -47,7 +51,7 @@ export default function Work() {
     <section id="work" className={styles.section}>
       <div className={styles.container}>
         <motion.div {...fadeUp} className={styles.head}>
-          <h2 className={styles.h2}>Recent Work</h2>
+          <h2 className={styles.h2}>Websites We’ve Created</h2>
 
           <p className={styles.lead}>
             Replace these placeholders with real case studies (even 3 strong ones improve
@@ -85,7 +89,7 @@ export default function Work() {
                   >
                     <Image
                       src={p.src}
-                      alt={p.name}
+                      alt={p.alt}
                       fill
                       sizes="(max-width: 980px) 100vw, 240px"
                       className={`${styles.image} ${p.name === 'FindPro' ? styles.imageBright : ''}`}
